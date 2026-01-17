@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Did She Cheat?</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .answer {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #0066cc;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f0f7ff;
+            border-left: 4px solid #0066cc;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #000;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .study {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .study h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            color: #0066cc;
+        }
+
+        .study-meta {
+            font-size: 0.95em;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .study p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .study ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .study li {
+            margin-bottom: 8px;
+        }
+
+        .study a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .study a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background-color: #fffacd;
+            padding: 2px 4px;
+            font-weight: bold;
+        }
+
+        .expert-quote {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #e8f5e9;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+            font-size: 1.05em;
+        }
+
+        .expert-quote p {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .expert-name {
+            font-weight: bold;
+            color: #2e7d32;
+            margin-top: 10px;
+        }
+
+        .external-link {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 6px;
+        }
+
+        .external-link p {
+            margin-bottom: 8px;
+        }
+
+        .external-link a {
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .external-link a:hover {
+            text-decoration: underline;
+        }
+
+        .debunk-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #fff3cd;
+            border-left: 4px solid #ff9800;
+            border-radius: 8px;
+        }
+
+        .debunk-section h2 {
+            color: #ff6b00;
+            border-bottom-color: #ff9800;
+        }
+
+        .debunk-item {
+            margin-bottom: 25px;
+        }
+
+        .debunk-item h3 {
+            font-size: 1.1em;
+            color: #ff6b00;
+            margin-bottom: 10px;
+        }
+
+        .debunk-item p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .debunk-item ul {
+            margin-left: 20px;
+        }
+
+        .debunk-item li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .about-section {
+            margin-top: 50px;
+            padding: 30px;
+            background-color: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            border-radius: 8px;
+        }
+
+        .about-section h2 {
+            color: #2e7d32;
+            border-bottom-color: #4caf50;
+        }
+
+        .about-section p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .kirsti-section {
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #f0f7ff;
+            border-left: 4px solid #0066cc;
+            border-radius: 8px;
+        }
+
+        .kirsti-section h2 {
+            color: #0066cc;
+            border-bottom-color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Did She Cheat?</h1>
+
+        <div class="answer">
+            No. Studies show trans women do not have an advantage in sports.
+        </div>
+
+        <h2>The Research</h2>
+
+        <div class="study">
+            <h3>2024 IOC-Funded Study: Strength, Power and Aerobic Capacity</h3>
+            <p class="study-meta">British Journal of Sports Medicine</p>
+            <p>An IOC-commissioned study comparing transgender and cisgender athletes found:</p>
+            <ul>
+                <li>Transgender women demonstrated <span class="highlight">lower performance</span> than cisgender women in forced expiratory volume (breathing capacity)</li>
+                <li>Transgender women had <span class="highlight">lower jump height</span> than cisgender women</li>
+                <li>Transgender women showed <span class="highlight">lower relative V̇O₂max</span> (aerobic capacity) than cisgender women</li>
+                <li>Transgender women had higher fat mass and lower muscle mass compared to cisgender men</li>
+                <li>Bone density in trans women was equivalent to cisgender women</li>
+                <li>The study concluded these results should "<span class="highlight">caution against precautionary bans and sport eligibility exclusions that are not based on sport-specific research</span>"</li>
+            </ul>
+            <p><a href="https://bjsm.bmj.com/content/58/11/586" target="_blank">Read the full study →</a></p>
+        </div>
+
+        <div class="study">
+            <h3>2024: Gender-Affirming Hormone Therapy & Physical Performance</h3>
+            <p class="study-meta">Journal of Clinical Endocrinology & Metabolism | Co-authored by Kirsti Miller (Australian Olympian)</p>
+            <p>This peer-reviewed study examined how feminizing hormone therapy affects athletic performance:</p>
+            <ul>
+                <li>Analyzed race times for 8 trans women distance runners before and after hormone therapy</li>
+                <li>Found <span class="highlight">no significant difference</span> between trans women and cisgender women in long-distance running times, 1.5-mile running times, and sit-ups after feminizing hormone therapy</li>
+                <li>In non-athletic trans women, feminizing hormone therapy increased fat mass by approximately 30% and decreased muscle mass by approximately 5% after 12 months</li>
+                <li>Concluded: "Limited evidence suggests that physical performance of transgender people who have undergone hormone therapy for at least 2 years approaches that of cisgender controls"</li>
+            </ul>
+            <p><a href="https://academic.oup.com/jcem/article/109/2/e455/7223439" target="_blank">Read the full study →</a></p>
+        </div>
+
+        <div class="study">
+            <h3>2021 Systematic Review: Sport and Transgender People</h3>
+            <p class="study-meta">Journal of Athletic Training & NIH/PMC</p>
+            <p>A comprehensive systematic review of transgender athlete research found:</p>
+            <ul>
+                <li><span class="highlight">No direct and consistent research</span> suggests transgender female individuals have an athletic advantage</li>
+                <li>The majority of competitive sport policies excluding trans athletes are <span class="highlight">discriminatory</span></li>
+                <li>The majority of transgender people report negative experiences in competitive sports</li>
+                <li>Social factors (discrimination and violence) significantly impact trans athlete participation</li>
+            </ul>
+            <p><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC5357259/" target="_blank">Read the full review →</a></p>
+        </div>
+
+        <div class="kirsti-section">
+            <h2>Expert Perspective: Kirsti Miller (Australian Olympian)</h2>
+
+            <p><strong>Kirsti Miller</strong> is an Australian Olympian, trans athlete, and researcher who co-authored peer-reviewed studies on transgender athletes. She has dedicated her work to debunking myths about trans athletes in sports.</p>
+
+            <div class="expert-quote">
+                <p><strong>On Olympic Participation Reality:</strong></p>
+                <p>"Since the IOC has created a rule for trans athletes to compete in 2003, over 71,000 people have become Olympians. Out of those 71,000 Olympians a total of 2 have been trans women & one came dead last the other came 37th out of 42."</p>
+                <p class="expert-name">— Kirsti Miller</p>
+            </div>
+
+            <div class="expert-quote">
+                <p><strong>On Trans Athletes Being Under-Represented:</strong></p>
+                <p>"Many politicians & the TERFS circulate myths about trans women that are transphobic, harmful, & violent. For example, that trans women will overwhelm women's sport, when trans women are in fact under-represented in sport and especially elite sport."</p>
+                <p class="expert-name">— Kirsti Miller</p>
+            </div>
+
+            <div class="expert-quote">
+                <p><strong>On The "Divide and Conquer" Tactic:</strong></p>
+                <p>"Many who oppose the inclusion of trans athletes erroneously claim that allowing trans athletes to compete will harm cisgender women. This divide and conquer tactic gets it exactly wrong."</p>
+                <p class="expert-name">— Kirsti Miller</p>
+            </div>
+
+            <div class="expert-quote">
+                <p><strong>On Female Athlete Support:</strong></p>
+                <p>"A study has confirmed what we all already knew – that the majority of female athletes have absolutely no problem with trans women competing in women's sports."</p>
+                <p class="expert-name">— Kirsti Miller</p>
+            </div>
+
+            <div class="expert-quote">
+                <p><strong>On Individual Assessment vs. Blanket Bans:</strong></p>
+                <p>"Assessing any group of athletes as a monolithic group especially amongst trans athletes is flawed. The sex, gender or chromosomal status of an athlete does not create any inherent danger or risk to safety. Rather, it is disparities in strength, speed & endurance and/or physique of each individual athlete that may, depending on the sport."</p>
+                <p class="expert-name">— Kirsti Miller</p>
+            </div>
+        </div>
+
+        <h2>Additional Expert Analysis & Debunking</h2>
+
+        <div class="external-link">
+            <p><strong>Erin in the Morning: Fact-Check</strong></p>
+            <p>Comprehensive debunk of SheWon.org and HeCheated.org claims, explaining how dubiously-sourced lists made their way from anonymous internet corners to the UN and state legislatures.</p>
+            <p><a href="https://www.erininthemorning.com/p/fact-check-lists-claiming-hundreds" target="_blank">Read the fact-check →</a></p>
+        </div>
+
+        <div class="external-link">
+            <p><strong>John Oliver: Last Week Tonight</strong></p>
+            <p>Video segment debunking SheWon's methodology and the misleading "900 displaced medals" claim.</p>
+            <p><a href="https://www.youtube.com/watch?v=flSS1tjoxf0" target="_blank">Watch the segment →</a></p>
+        </div>
+
+        <div class="external-link">
+            <p><strong>San Francisco Government: Trans Women in Sports: Facts Over Fear</strong></p>
+            <p>Official resource summarizing research findings on transgender athletes.</p>
+            <p><a href="https://www.sf.gov/trans-women-in-sports-facts-over-fear" target="_blank">View the resource →</a></p>
+        </div>
+
+        <div class="about-section">
+            <h2>About This Site</h2>
+            <p>This site exists to counter misinformation spread by <strong>SheWon.org</strong> and <strong>HeCheated.org</strong>, which use dubiously-sourced claims and inflated statistics to suggest trans women have competitive advantages—despite peer-reviewed evidence showing the opposite.</p>
+            <p>These sites:</p>
+            <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 15px;">
+                <li>Operate anonymously while being connected to extremist communities</li>
+                <li>Use artificial calculation methods that inflate "displaced medals" without scientific basis</li>
+                <li>Have spread from anonymous internet corners to the United Nations and state legislatures</li>
+                <li>Ignore systemic issues affecting all female athletes (pay equity, sponsorships, media coverage, harassment accountability)</li>
+            </ul>
+            <p>When you search for information about trans athletes in sports, you deserve accurate, evidence-based answers grounded in peer-reviewed research—not anonymous misinformation. This site provides them.</p>
+        </div>
+
+        <div class="debunk-section">
+            <h2>Debunking SheWon.org & HeCheated.org</h2>
+
+            <div class="debunk-item">
+                <h3>The "Displaced Medals" Claim</h3>
+                <p>SheWon claims hundreds or thousands of female athletes have been "displaced" or had "medals stolen" by trans women.</p>
+                <p><strong>The Problem:</strong> This methodology is fundamentally dishonest. A trans woman winning a medal doesn't automatically mean a specific cisgender woman "lost" it. These sites count any medal won by a trans athlete as a "displacement," artificially inflating numbers without scientific or logical basis. Even the Supreme Court noted this "calculation algorithm artificially inflates the number of medals 'lost.'"</p>
+            </div>
+
+            <div class="debunk-item">
+                <h3>Anonymous Sourcing & Extremist Connections</h3>
+                <p>SheWon and HeCheated operate with anonymity while being documented to have connections to extremist communities and organizations designated as hate groups by the Southern Poverty Law Center.</p>
+                <p><strong>The Problem:</strong> Credible research is transparent about who operates it and where data comes from. Anonymous operations making inflammatory claims while connected to extremist networks are red flags for misinformation. Compare this to Kirsti Miller's open, identified work as a published researcher and Olympian.</p>
+            </div>
+
+            <div class="debunk-item">
+                <h3>Ignoring Actual Female Athlete Issues</h3>
+                <p>These sites focus narrowly on trans athletes while largely ignoring systemic issues affecting all female athletes:</p>
+                <ul>
+                    <li><strong>Pay equity gaps</strong> — Women athletes earn significantly less than men</li>
+                    <li><strong>Media coverage disparities</strong> — Women's sports receive minimal broadcast time</li>
+                    <li><strong>Sponsorship and advertising inequity</strong> — Less corporate investment in women's sports</li>
+                    <li><strong>Sexual assault and harassment accountability</strong> — Widespread institutional problems ignored</li>
+                </ul>
+                <p><strong>The Problem:</strong> If these organizations genuinely cared about female athletes' welfare, they would prioritize systemic issues affecting millions. Their narrow focus suggests a political agenda rather than genuine advocacy.</p>
+            </div>
+
+            <div class="debunk-item">
+                <h3>Contradicted by Peer-Reviewed Research</h3>
+                <p>The major research findings above directly contradict SheWon's core narrative:</p>
+                <ul>
+                    <li>2024 IOC-funded study: Trans women performed <strong>worse</strong> than cisgender women in key metrics</li>
+                    <li>2024 Journal of Clinical Endocrinology & Metabolism: No significant performance difference after hormone therapy</li>
+                    <li>2021 Systematic Review: "No direct and consistent research" supports athletic advantage claims</li>
+                    <li>Olympic data: Only 2 trans women out of 71,000 Olympic athletes since 2003—one finished dead last</li>
+                </ul>
+                <p><strong>The Problem:</strong> When your core argument is contradicted by peer-reviewed, IOC-funded research, your credibility is fundamentally compromised. Yet SheWon continues spreading these claims uncritically.</p>
+            </div>
+
+            <div class="debunk-item">
+                <h3>Female Athletes Support Trans Inclusion</h3>
+                <p>SheWon claims to represent female athletes, but research shows otherwise.</p>
+                <p><strong>The Problem:</strong> Studies confirm that the majority of female athletes have no problem with trans women competing in women's sports. The "protection" narrative manufactured by SheWon doesn't reflect what actual female athletes think or want. This is the same "divide and conquer" tactic used to justify bathroom bans and other discriminatory policies.</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>This site is dedicated to evidence-based information about trans athletes in sports.</p>
+            <p>Last updated: January 2026</p>
+            <div class="copyright">
+                © 2026 didshecheat.org. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
